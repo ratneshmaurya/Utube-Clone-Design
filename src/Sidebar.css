@@ -1,0 +1,14 @@
+.sidebar{
+    flex:0.2; /*this will make sidebar section to take only 20% of width ,as sidebar and main screen both are in a single container of having flex ,that's why it's working here*/
+    /* border:1px solid black; */
+    position:sticky;
+    top:81px;
+}
+
+.sidebar>hr{
+    height:1px;
+    border:0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

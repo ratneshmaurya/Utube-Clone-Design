@@ -1,0 +1,53 @@
+.header{
+    display:flex;
+    align-items:center; /* to make all things lie in verticlly-center in header section */
+    justify-content:space-between; /*to have space between ,among three containers udes in header section*/
+    padding:20px;
+    position: sticky;
+    top:0;
+    z-index:100; /*so that on position sticky , nothing will ever come over this section*/
+    background-color: white; /*so that on scrolling ,the lower items on coming above shouldn't overlap (just remove this and see the difference)*/
+}
+.header__logo{
+    height:25px;
+    object-fit:contain; /*svg/vector image me hmesha kr do*/ 
+    margin-left: 20px; /*fix rhe itna ,bde ghte naa*/
+}
+
+
+/*--------now for each container----------*/
+.header__input
+{
+    display: flex;
+    align-items: center;
+    width:40%;
+    height: 40px;
+    border:1px solid black;
+}
+.header__input > input /*apply only to direct input field*/
+{
+    flex:1;
+    padding-left: 5px;
+    height:38px;
+    font-size: 15px;
+    font-weight:600;
+    border:none;
+    outline: none; /*to have no outlining on input tag while inputting*/
+}
+.header__input >Link{
+    color:inherit;
+}
+.header__inputButton{
+    width:48px !important; /*so that it overwrite the styling of material UI*/
+    background-color: #e7e4e4 !important;
+    padding:6px 0px;
+    border-left: 1px solid black;
+}
+.header__icons{
+    display: flex;
+    align-items: center;
+}
+.header__icon /*--for only three icons to have little space from avatar icon---*/
+{
+    margin-right: 8px;
+}

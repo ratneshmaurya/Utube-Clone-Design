@@ -1,0 +1,31 @@
+.videoCard  /*for whole a videoCard container*/
+{
+    margin-bottom: 40px; /*to have space between two containers*/
+    width: 270px; /*as of utube*/
+}
+.videoCard__thumbnail{
+    height:140px;
+    width:250px;
+}
+.videoCard__info 
+{
+    display: flex;/*to have channel_icon_avatar and channel_info container in a single row*/
+    margin-top: 10px;
+    margin-right:20px;
+}
+.videoCard__text{
+    margin-left: 10px;
+}
+.videoCard__text>h4
+{
+    font-size:14px; /*h4 ko small krr rhe,so that wo h4 bold rhe but just small ho jaae phle se */
+    margin-bottom: 5px;
+}
+.videoCard__text>p{
+    font-size:14px;
+    color:gray;
+}
+.videoCard__avatar{
+    height:30px !important; /*to overwrite material ui default width and height to the avater logo*/
+    width:30px !important;
+}

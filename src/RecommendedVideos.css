@@ -1,0 +1,14 @@
+.recommendedVideos{
+    flex:0.8; /* so that it occupy remaining 80% width ,else it only take the content width*/
+    background-color: rgb(245, 244, 244);
+    padding: 10px 20px;
+    padding-bottom: 0;
+}
+.recommendedVideos>h2{
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.recommendedVideos__videos{
+    display: flex;/*to make flexing for each video card container*/
+    flex-wrap: wrap;
+}

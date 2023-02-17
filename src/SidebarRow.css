@@ -1,0 +1,36 @@
+.sidebarRow{
+    display: flex; /*to have sidebar icon and text in a single line (i.e for a row)*/
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebarRow__icon{
+    color:rgb(134, 130, 130);
+}
+.sidebarRow__title{
+    flex:1; /*so to use up as much space it can in the sidebar-row space*/
+    font-size: 15px;
+    margin-left: 18px;
+}
+.sidebarRow:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.sidebarRow:hover > .sidebarRow__icon  /*on hovering sidebar-rows change the color of icon*/
+{
+    color:rgb(192, 3, 3);
+}
+.sidebarRow:hover > .sidebarRow__title{
+    font-weight: bold;
+}
+
+/*----for  already selected items (i.e for Home_sidebar_row , on very first run)-------*/
+.sidebarRow.selected{
+    background-color: lightgray;
+}
+.sidebarRow.selected > .sidebarRow__icon{
+    color:rgb(192, 3, 3);
+}
+.sidebarRow.selected > .sidebarRow__title{
+    font-weight: bold;
+}
